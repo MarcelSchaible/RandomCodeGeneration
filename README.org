@@ -1,0 +1,20 @@
+Demonstrator for a simple random code generation with ANTLR.
+The generation is purely based on the grammar.
+
+* Build
+
+Run the build script in the project root directory:
+
+#+BEGIN_SRC shell
+./build.sh
+#+END_SRC
+
+
+* Execution
+
+In the out directory run:
+
+#+BEGIN_SRC shell
+java -cp /usr/local/lib/antlr-4.7.2-complete.jar:.  Main
+#+END_SRC
+
