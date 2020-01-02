@@ -10,11 +10,13 @@ Run the build script in the project root directory:
 #+END_SRC
 
 
-* Execution
+* Test
 
 In the out directory run:
 
 #+BEGIN_SRC shell
 java -cp /usr/local/lib/antlr-4.7.2-complete.jar:.  Main
 #+END_SRC
+
+The program produces with every run a different generated code purely based on the grammar "expr.g4"
 
