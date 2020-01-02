@@ -2,6 +2,8 @@ WIP=`pwd`
 OUT=${WIP}/out
 ANTLR=/usr/local/lib/antlr-4.7.2-complete.jar
 
+mkdir out
+
 pushd .
 cd src
 java -jar ${ANTLR} -package org.antlr.parser.antlr4 -o org/antlr/parser/antlr4 -visitor -no-listener LexBasic.g4
