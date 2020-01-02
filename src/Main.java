@@ -6,14 +6,13 @@ import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.TokenStream;
-import org.fernuni.antlr.*;
-import org.fernuni.antlr.ANTLRv4Parser.ParserRuleSpecContext;
+import org.antlr.parser.antlr4.*;
 
 public class Main {
 
   public static void main(String[] args) {
     try {
-      CharStream input = CharStreams.fromFileName("/home/marcel/repositories/antlr-hello/src/expr.g4");
+      CharStream input = CharStreams.fromFileName("expr.g4");
       ANTLRv4Lexer lexer = new ANTLRv4Lexer(input);
       TokenStream tokenStream = new CommonTokenStream(lexer);
 
